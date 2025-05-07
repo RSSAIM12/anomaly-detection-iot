@@ -39,7 +39,7 @@ def home():
     return render_template_string(html)
 
 def monitor_anomalies():
-    anomalies_folder = 'anomalies_output/'
+    anomalies_folder = 'hdfs://localhost:9000/user/sanaa/anomalies_output/'
     processed_files = set()
 
     while True:
